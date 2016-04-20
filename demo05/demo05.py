@@ -27,7 +27,7 @@ if __name__ == '__main__':
     for url in urls:
         getsource(url)
     print time.time() - start
-    
+
     start = time.clock()
     result = pool.map(getsource, urls)
     print time.clock() - start
